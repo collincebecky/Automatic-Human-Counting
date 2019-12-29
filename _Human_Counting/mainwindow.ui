@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1344</width>
+    <height>814</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>REDSHIFT</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.980000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(211, 215, 207);
+color: rgb(238, 238, 236);
+background-color: rgb(85, 87, 83);
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="horizontalTabWidget">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(238, 238, 236);</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>22</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="horizontalTabWidgetPage1">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>Resources/icons/tabicons/icon0.png</normaloff>Resources/icons/tabicons/icon0.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Cameras</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QFrame" name="gridFrame">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="3">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>100</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0" rowspan="2">
+            <widget class="QFrame" name="verticalFrame">
+             <property name="maximumSize">
+              <size>
+               <width>270</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(238, 238, 236);
+color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="placeholderText">
+                 <string>search .........</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="cam_tree">
+                <column>
+                 <property name="text">
+                  <string>Live Cameras</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QFrame" name="frame_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="MyLabel" name="front_screen">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Panel</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>25</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>Resources/icons/tabicons/icon1.png</normaloff>Resources/icons/tabicons/icon1.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>::: Grid</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QFrame" name="gridFrame">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="2">
+            <widget class="MyLabel" name="screen3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="MyLabel" name="screen2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="MyLabel" name="screen4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="MyLabel" name="screen5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="MyLabel" name="screen6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="MyLabel" name="screen1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Resources/covers/nocam.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(238, 238, 236);
+color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>start cameras</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>Resources/icons/tabicons/icon4.png</normaloff>Resources/icons/tabicons/icon4.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Control</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="horizontalFrame">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QFrame" name="verticalFrame">
+             <property name="minimumSize">
+              <size>
+               <width>650</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>255</height>
+                 </size>
+                </property>
+                <property name="tabPosition">
+                 <enum>QTabWidget::West</enum>
+                </property>
+                <property name="tabShape">
+                 <enum>QTabWidget::Rounded</enum>
+                </property>
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="tab_6">
+                 <attribute name="title">
+                  <string>Records</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_11">
+                  <item row="1" column="2">
+                   <widget class="QTableWidget" name="camera_table">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>530</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color:rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+color:white;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="autoScrollMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="editTriggers">
+                     <set>QAbstractItemView::NoEditTriggers</set>
+                    </property>
+                    <property name="rowCount">
+                     <number>1</number>
+                    </property>
+                    <property name="columnCount">
+                     <number>4</number>
+                    </property>
+                    <attribute name="horizontalHeaderDefaultSectionSize">
+                     <number>120</number>
+                    </attribute>
+                    <row/>
+                    <column>
+                     <property name="text">
+                      <string>Cameras</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Time</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>People In</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>People Out</string>
+                     </property>
+                    </column>
+                    <item row="0" column="0">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </item>
+                    <item row="0" column="2">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLineEdit" name="search_cameras">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::RightToLeft</enum>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(227, 234, 234);
+color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="placeholderText">
+                     <string>search cameras</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QWidget" name="widget_3" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>700</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_12">
+                     <item row="3" column="5">
+                      <widget class="QLabel" name="vis_bus_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;
+background-color: rgb(92, 53, 102);</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0" colspan="7">
+                      <widget class="QLabel" name="label_8">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(71, 71, 71);
+border-bottom:3px solid white;</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ANALYSIS BREAKDOWN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="2">
+                      <widget class="QLabel" name="label_9">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;</string>
+                       </property>
+                       <property name="text">
+                        <string>PEOPLE OUT</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="6">
+                      <widget class="QLabel" name="vis_truck_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;
+background-color: rgb(46, 52, 54);
+</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_10">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;</string>
+                       </property>
+                       <property name="text">
+                        <string>TRAFIC</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="4">
+                      <widget class="QLabel" name="vis_car_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;
+background-color: rgb(115, 210, 22);
+</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;YESTERDAY&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QLabel" name="vis_veh_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;
+background-color: rgb(92, 53, 102);</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="5">
+                      <widget class="QLabel" name="label_11">
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;</string>
+                       </property>
+                       <property name="text">
+                        <string>PEOPLE IN</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="vis_ped_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+
+border-radius:3px;
+background-color: rgb(114, 159, 207);
+</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;NOW&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="2">
+                      <widget class="QLabel" name="vis_cyc_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;
+background-color: rgb(46, 52, 54);</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QLabel" name="label_15">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;</string>
+                       </property>
+                       <property name="text">
+                        <string>PEOPLE IN</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="4">
+                      <widget class="QLabel" name="label_13">
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;</string>
+                       </property>
+                       <property name="text">
+                        <string>TRAFIC</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="6">
+                      <widget class="QLabel" name="label_12">
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border:1px solid rgb(211, 215, 207);
+border-radius:3px;</string>
+                       </property>
+                       <property name="text">
+                        <string>PEOPLE OUT</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0" colspan="7">
+                      <widget class="QWidget" name="widget_4" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(46, 52, 54);
+border:1px solid #eee;
+border-radius: 3px; </string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_13">
+                        <item row="0" column="0">
+                         <layout class="QVBoxLayout" name="plot_layout_2"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>800</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_8">
+                 <attribute name="title">
+                  <string>Configure</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_14">
+                  <item row="0" column="0">
+                   <widget class="QFrame" name="horizontalFrame_3">
+                    <layout class="QGridLayout" name="gridLayout_17">
+                     <item row="0" column="1">
+                      <widget class="QFrame" name="verticalFrame_3">
+                       <property name="minimumSize">
+                        <size>
+                         <width>325</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>400</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(0, 0, 0,95);
+color:rgb(0, 0, 255);
+border-radius:5px;</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_18">
+                        <item row="1" column="0">
+                         <widget class="QLineEdit" name="cam_id">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>100</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="focusPolicy">
+                           <enum>Qt::NoFocus</enum>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+                          </property>
+                          <property name="readOnly">
+                           <bool>true</bool>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Cam Id:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0" colspan="4">
+                         <widget class="QLabel" name="test_window_2">
+                          <property name="minimumSize">
+                           <size>
+                            <width>320</width>
+                            <height>255</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::NoFrame</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Sunken</enum>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap>Resources/covers/qcctv.png</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                          <property name="wordWrap">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0" colspan="4">
+                         <widget class="QLineEdit" name="cam_link">
+                          <property name="minimumSize">
+                           <size>
+                            <width>100</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Camera Location</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0" colspan="4">
+                         <widget class="QLineEdit" name="cam_IP">
+                          <property name="minimumSize">
+                           <size>
+                            <width>100</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>IP Adress  :: Port No.</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0" colspan="4">
+                         <widget class="QLineEdit" name="username">
+                          <property name="minimumSize">
+                           <size>
+                            <width>100</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Camera  Username</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0" colspan="4">
+                         <widget class="QLineEdit" name="password">
+                          <property name="minimumSize">
+                           <size>
+                            <width>100</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="echoMode">
+                           <enum>QLineEdit::Password</enum>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Camera  Password</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="2">
+                         <widget class="QCommandLinkButton" name="cam_config_btn_2">
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(85, 87, 83);
+color: rgb(238, 238, 236);</string>
+                          </property>
+                          <property name="text">
+                           <string>Update</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="3">
+                         <widget class="QCommandLinkButton" name="doneBtn">
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(85, 87, 83);
+color: rgb(238, 238, 236);</string>
+                          </property>
+                          <property name="text">
+                           <string>Add++</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="0">
+                         <widget class="QCommandLinkButton" name="testBtn_2">
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(85, 87, 83);
+color: rgb(238, 238, 236);</string>
+                          </property>
+                          <property name="text">
+                           <string>Test Cam</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="1">
+                         <widget class="QCommandLinkButton" name="del_btn_2">
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(85, 87, 83);
+color: rgb(238, 238, 236);</string>
+                          </property>
+                          <property name="text">
+                           <string>Delete</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1" colspan="3">
+                         <widget class="QLineEdit" name="cam_zone">
+                          <property name="minimumSize">
+                           <size>
+                            <width>100</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Zone Area (eg. Nyali West)</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QTableWidget" name="camera_table_2">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>650</width>
+                         <height>600</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color:rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+color: white;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <property name="autoScrollMargin">
+                        <number>10</number>
+                       </property>
+                       <property name="editTriggers">
+                        <set>QAbstractItemView::NoEditTriggers</set>
+                       </property>
+                       <property name="rowCount">
+                        <number>50</number>
+                       </property>
+                       <attribute name="horizontalHeaderDefaultSectionSize">
+                        <number>120</number>
+                       </attribute>
+                       <row>
+                        <property name="text">
+                         <string>1</string>
+                        </property>
+                       </row>
+                       <row>
+                        <property name="text">
+                         <string>2</string>
+                        </property>
+                       </row>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <row/>
+                       <column>
+                        <property name="text">
+                         <string>Camera Id</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Region</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Location</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Source</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                       <item row="0" column="0">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="0" column="2">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="0" column="3">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="1" column="0">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="1" column="2">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="1" column="3">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="2" column="0">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="2" column="2">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="2" column="3">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="3" column="0">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="3" column="2">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="3" column="3">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="4" column="0">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="4" column="2">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                       <item row="4" column="3">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">mylabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

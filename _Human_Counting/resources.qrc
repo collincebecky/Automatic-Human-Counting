@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+	<qresource prefix="/">
+		<file alias="icon0">/home/centurine/BRANCE/_Human_Counting/Resources/icons/tabicons/icon0.png</file>
+		<file alias="icon1">/home/centurine/BRANCE/_Human_Counting/Resources/icons/tabicons/icon1.png</file>
+		<file alias="icon4">/home/centurine/BRANCE/_Human_Counting/Resources/icons/tabicons/icon4.png</file>
+	</qresource>
+</RCC>	
